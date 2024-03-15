@@ -45,6 +45,10 @@ runs:
       run: touch ${{ inputs.folder }}/.nojekyll
       shell: bash
 
+    - name: See what's what.
+      run: ls -R
+      shell: bash
+
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
